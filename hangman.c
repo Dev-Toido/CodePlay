@@ -158,9 +158,10 @@ int main(void){
         int tries = 0;
         int expected = (ch == 'H') ? 3 : 2;
 
-        while (tries < 6) {
+        while (tries <= 6) {
             char *image = hangman_image(tries);
             if (image) printf("%s\n", image);
+            if(tries==6)break;
             if (w) printf("pWord: %s\n", w);
             if (m) printf("Word: %s\n", m);
             printf("Enter the guess in sequential order: ");
