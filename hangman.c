@@ -125,8 +125,7 @@ int update_mask(char *masked_word, const char *original_word, char *guess) {
     return match_word;
 }
 
-
-int main(void){
+void playHangman(){
     int flag = 1, die = 1;
     srand((unsigned)time(NULL));
     printf("%40s","WELCOME TO THE GAME OF HANGMAN!!\n");
@@ -191,4 +190,8 @@ int main(void){
         free(w); w = NULL;
         free(m); m = NULL;
     } while (flag);
+}
+int main(void){
+    playHangman();
+    return 0;
 }
