@@ -188,7 +188,7 @@ void playHangman(){
             if (matched == 0) tries++;
         }
         if (die) {
-            printf("Sorry for the poor man, your poor guesses made him die. Better try next time!!\n");
+            printf("Sorry for the poor man, your poor guesses made him die. Better try next time!!\nThe word was %s.\n", m);
         }
         free(w); w = NULL;
         free(m); m = NULL;
@@ -203,15 +203,15 @@ void welcomePrint(){
     
     name[strcspn(name, "\n")] = '\0';
     printf("\nWelcome %s to Codeplay-A C based gaming arcade\n\n\n", name);
-printf("+-------------------------------------+\n");
-printf("|        CODEPLAY - GAMING ARCADE     |\n");
-printf("|      A C based Gaming Experience    |\n");
-printf("|                                     |\n");
-printf("+-------------------------------------+\n");
-printf("|            Available Games:         |\n");
-printf("|   1. TIC-TAC-TOE                    |\n");
-printf("|   2. HANGMAN                        |\n");
-printf("+-------------------------------------+\n");
+    printf("+-------------------------------------+\n");
+    printf("|        CODEPLAY - GAMING ARCADE     |\n");
+    printf("|      A C based Gaming Experience    |\n");
+    printf("|                                     |\n");
+    printf("+-------------------------------------+\n");
+    printf("|            Available Games:         |\n");
+    printf("|   1. TIC-TAC-TOE                    |\n");
+    printf("|   2. HANGMAN                        |\n");
+    printf("+-------------------------------------+\n");
     do {
         
         printf("+-------------------------------------+\n");
@@ -236,7 +236,7 @@ printf("+-------------------------------------+\n");
                 playHangman();
                 printf("\n\n");
                 break;
-            case 3:
+            case 0:
                 printf("Thanks for playing and do play again!!");
                 break;
             default:
