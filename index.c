@@ -234,7 +234,7 @@ printf("+-------------------------------------+\n");
                 printf("\n\n");
                 break;
             case 3:
-                printf("Thanks for using this programme!");
+                printf("Thanks for playing and do play again!!");
                 break;
             default:
                 printf("Please enter valid choice (1-3)");
