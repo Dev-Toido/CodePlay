@@ -186,7 +186,7 @@ void play(char **board1,char **board2,int n){
         }
     }
 }
-int main(){
+void play_tictactoe(){
     int flag = 1, n = 0;
     printf("%40s","WELCOME TO THE GAME OF TIC-TAC-TOE!!\n");
     //The fancy printing part is to be done here
@@ -237,5 +237,8 @@ int main(){
         bforp=NULL;
 
     } while (flag);
+}
+int main(){
+    play_tictactoe();
     return 0;
 }
