@@ -22,6 +22,7 @@ char* hangman_image(int n){
         return hm;
 }
 /* simple portable strdup replacement */
+
 char *my_strdup(const char *s){
     char *p = malloc(strlen(s) + 1);
     if (p) strcpy(p, s);
@@ -188,7 +189,7 @@ void playHangman(){
             if (matched == 0) tries++;
         }
         if (die) {
-            printf("Sorry for the poor man, your poor guesses made him die. Better try next time!!\nThe word was %s.\n", m);
+            printf("Sorry for the poor man, your poor guesses made him die. Better try next time!!\nThe word was %s.\n", w);
         }
         free(w); w = NULL;
         free(m); m = NULL;
