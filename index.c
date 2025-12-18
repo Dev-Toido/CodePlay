@@ -227,7 +227,7 @@ void welcomePrint(){
         switch(choose){
             case 1:
                 printf("TIC-TAC-TOE GAME RULES MENU:\n");
-                printf("");//Rules for the TIC-TAC-TOE game
+                printf("TIC-TAC-TOE RULES MENU:\n=====================================\nPLAYERS:\n\nPLAYER 1:X\nPLAYER 2:O\n\nHOW TO WIN:\n\nFULL ROW->---\nFULL COLUMN \nFULL DIAGONAL\n\nHOW TO PLAY:\n\n1. Pick a number (1-9, 1-16, or 1-25)\n2. Guide board shows where numbers go\n3. Take turns - don't pick taken spots!\n4. Block your opponent!\n\nBoard Sizes:\n\n1.Easy: 3x3 (classic)\n2. Medium: 4x4\n3. Hard: 5x5 (A=10, B=11...)\n\nGame Ends when:\n\nYou get a full line = you win\nBoard is completely full = it's a draw\n");//Rules for the TIC-TAC-TOE game
                 playtictactoe();
                 printf("\n\n");
                 break;
